@@ -1,5 +1,8 @@
 import React from "react";
 
+// styles
+import "../styles/status.css";
+
 const Status = () => {
   return (
     <>
@@ -7,9 +10,9 @@ const Status = () => {
         <p className="shipment-no">Shipment No. 7234258</p>
         <h1 className="shipment-heading">Delivered</h1>
         <div className="progress-bar">
-          <div className="bar-1"></div>
-          <div className="bar-2"></div>
-          <div className="bar-3"></div>
+          <div className="bar bar-1"></div>
+          <div className="bar bar-2"></div>
+          <div className="bar bar-3"></div>
         </div>
         <p className="last-info">
           Your shipper requested a pickup. Bosta will pick it up soon
