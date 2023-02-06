@@ -1,5 +1,8 @@
 import React from "react";
 
+// styles
+import "../styles/track.css";
+
 // icons
 import { FiSearch } from "react-icons/fi";
 
