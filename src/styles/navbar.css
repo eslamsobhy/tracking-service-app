@@ -42,3 +42,41 @@
   margin: 1px 0 0 7px;
   font-size: 1.2rem;
 }
+
+.drop-hide {
+  position: absolute;
+  top: -999px;
+  left: -9999px;
+}
+
+.drop-down-container {
+  position: absolute;
+  top: 45px;
+  left: 1122px;
+  min-width: 85.5px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+    0 9px 28px 8px rgb(0 0 0 / 5%);
+  border-radius: 7px;
+}
+
+.drop-items {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drop-item {
+  text-align: center;
+  padding: 7px 0;
+  width: 90%;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.drop-item:hover {
+  background-color: #eee;
+}

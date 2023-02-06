@@ -53,6 +53,12 @@ const Navbar = () => {
             <RiArrowDownSLine className="arrow-icon" />
           </span>
         </div>
+        <div className="drop-hide drop-down-container">
+          <ul className="drop-items">
+            <li className="drop-item">English</li>
+            <li className="drop-item">Arabic</li>
+          </ul>
+        </div>
       </nav>
     </div>
   );
