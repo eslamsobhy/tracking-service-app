@@ -1,5 +1,11 @@
+import Navbar from "./components/Navbar";
+
 function App() {
-  return <div className="App">Tracking service!</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
