@@ -1,5 +1,8 @@
 import React from "react";
 
+// styles
+import "../styles/activity-log.css";
+
 const ActivityLog = () => {
   return (
     <>

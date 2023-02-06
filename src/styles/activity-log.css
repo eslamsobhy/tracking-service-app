@@ -1,0 +1,60 @@
+.activity-container {
+  margin: 20px 0 20px 200px;
+}
+
+.activity-title {
+  font-size: 95%;
+  color: #667085;
+  margin-bottom: 20px;
+}
+
+.activity-info {
+  position: relative;
+  margin-left: 25px;
+}
+
+.activity-info::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-color: #ddd;
+  position: absolute;
+  border-radius: 50%;
+  left: -25px;
+  top: -5px;
+}
+
+.activity-info::after {
+  content: "";
+  width: 2px;
+  height: 75px;
+  background-color: #ddd;
+  position: absolute;
+  left: -17.5px;
+  top: 17px;
+}
+
+.log-date {
+  font-weight: bold;
+  color: #111619;
+  margin-bottom: 10px;
+}
+
+.log-details {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+}
+
+.log-details .log-info {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #111619;
+}
+
+.log-details .log-time {
+  margin: 0;
+  font-size: 15px;
+  color: #667085;
+}
