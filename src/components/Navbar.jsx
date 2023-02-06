@@ -1,5 +1,11 @@
 import React from "react";
 
+// styles
+import "../styles/navbar.css";
+
+// icons
+import { RiArrowDownSLine } from "react-icons/ri";
+
 const Navbar = () => {
   return (
     <div className="container">
@@ -44,23 +50,7 @@ const Navbar = () => {
         <div className="drop-down">
           <span className="drop-down-lang">En</span>
           <span className="drop-down-icon">
-            <svg
-              width="1em"
-              height="1em"
-              viewBox="0 0 10 6"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              focusable="false"
-              class=""
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M1.25 0L5 3.6L8.75 0L10 1.2L5 6L0 1.2L1.25 0Z"
-                fill="#98A2B3"
-              ></path>
-            </svg>
+            <RiArrowDownSLine className="arrow-icon" />
           </span>
         </div>
       </nav>

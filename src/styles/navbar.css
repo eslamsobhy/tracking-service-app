@@ -1,0 +1,44 @@
+.container {
+  padding: 20px 70px;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo svg {
+  width: 120px;
+  height: 36px;
+}
+
+.drop-down {
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.drop-down:hover .arrow-icon {
+  color: #e30613;
+  transform: rotate(-90deg);
+}
+
+.drop-down:hover .drop-down-lang {
+  color: #e30613;
+}
+
+.drop-down .drop-down-lang {
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.drop-down .drop-down-icon {
+  text-align: center;
+}
+
+.drop-down .drop-down-icon svg {
+  margin: 1px 0 0 7px;
+  font-size: 1.2rem;
+}
