@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Status from "./components/Status";
 import Track from "./components/Track";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navbar />
       <Track />
+      <Status />
     </>
   );
 }
