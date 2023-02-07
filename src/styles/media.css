@@ -2,11 +2,11 @@
 
 @media (max-width: 850px) {
   .media-icon {
-    display: inline-block;
+    display: inline-block !important;
   }
 
   .drop-down {
-    display: none;
+    display: none !important;
   }
 
   .container {
