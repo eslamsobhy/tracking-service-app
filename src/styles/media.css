@@ -14,11 +14,23 @@
   }
 }
 
-/* Status */
+/* Track */
 
 @media (max-width: 650px) {
-  .progress-bar {
+  .track-container .shipment-search {
     width: 90vw;
+  }
+}
+
+/* Status */
+
+@media (max-width: 660px) {
+  .status-container .progress-bar {
+    width: 90vw;
+  }
+
+  .status-container .last-info {
+    width: 80vw;
   }
 }
 

@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="media-icon">
           <FaBars />
         </div>
-        <div className="drop-hide drop-down-container">
+        <div className="drop-hide drop-down-contaainer">
           <ul className="drop-items">
             <li className="drop-item">English</li>
             <li className="drop-item">Arabic</li>

@@ -2,6 +2,7 @@ import React from "react";
 
 // styles
 import "../styles/track.css";
+import "../styles/media.css";
 
 // icons
 import { FiSearch } from "react-icons/fi";

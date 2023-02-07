@@ -59,9 +59,10 @@
 }
 
 .drop-hide {
-  position: absolute;
+  /* position: absolute;
   top: -999px;
-  left: -9999px;
+  left: -9999px; */
+  display: none;
 }
 
 .drop-down-container {

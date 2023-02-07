@@ -2,6 +2,7 @@ import React from "react";
 
 // styles
 import "../styles/activity-log.css";
+import "../styles/media.css";
 
 const ActivityLog = () => {
   return (

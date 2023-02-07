@@ -2,6 +2,7 @@ import React from "react";
 
 // styles
 import "../styles/status.css";
+import "../styles/media.css";
 
 const Status = () => {
   return (
