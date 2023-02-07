@@ -5,6 +5,7 @@ import "../styles/navbar.css";
 
 // icons
 import { RiArrowDownSLine } from "react-icons/ri";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -52,6 +53,9 @@ const Navbar = () => {
           <span className="drop-down-icon">
             <RiArrowDownSLine className="arrow-icon" />
           </span>
+        </div>
+        <div className="media-icon">
+          <FaBars />
         </div>
         <div className="drop-hide drop-down-container">
           <ul className="drop-items">
