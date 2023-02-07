@@ -1,0 +1,15 @@
+/* Navbar */
+
+@media (max-width: 850px) {
+  .media-icon {
+    display: inline-block;
+  }
+
+  .drop-down {
+    display: none;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+}

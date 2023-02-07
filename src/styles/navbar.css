@@ -14,13 +14,16 @@
 
 .media-icon {
   display: none;
+}
+
+.media-icon svg {
   font-size: 1.6rem;
   color: #111619;
   cursor: pointer;
   transition: all 0.3s linear;
 }
 
-.media-icon:hover {
+.media-icon svg:hover {
   transform: rotate(90deg);
 }
 

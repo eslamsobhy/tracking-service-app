@@ -2,6 +2,7 @@ import React from "react";
 
 // styles
 import "../styles/navbar.css";
+import "../styles/media.css";
 
 // icons
 import { RiArrowDownSLine } from "react-icons/ri";
