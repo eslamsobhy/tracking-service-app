@@ -21,3 +21,12 @@
     width: 90vw;
   }
 }
+
+/* Activity Log */
+
+@media (max-width: 1270px) {
+  .activity-container {
+    width: 80vw;
+    margin: 20px auto;
+  }
+}
