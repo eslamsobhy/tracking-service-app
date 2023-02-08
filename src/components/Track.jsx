@@ -10,6 +10,9 @@ import { FiSearch } from "react-icons/fi";
 const Track = () => {
   return (
     <>
+      <div className="modal-container">
+        <div className="modal-option">العربية</div>
+      </div>
       <div className="track-container">
         <div className="section-heading">Track your shipment</div>
         <div className="shipment-search">
