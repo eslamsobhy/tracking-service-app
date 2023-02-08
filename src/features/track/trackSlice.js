@@ -7,6 +7,7 @@ const initialState = {
   isArabic: false,
   isError: false,
   shipmentNum: "",
+  isBlank: false,
   location: {},
 };
 
@@ -34,6 +35,12 @@ const trackSlice = createSlice({
     updateShipmentNum: (state, number) => {
       state.shipmentNum = number;
     },
+    returnHome: (state) => {
+      state.isBlank = true;
+    },
+    leaveHome: (state) => {
+      state.isBlank = false;
+    },
     // changeLang: (state) => {
     //   state.isArabic = true;
     // },
@@ -53,6 +60,11 @@ const trackSlice = createSlice({
   },
 });
 
-export const { openDropDown, closeDropDown, updateShipmentNum } =
-  trackSlice.actions;
+export const {
+  openDropDown,
+  closeDropDown,
+  updateShipmentNum,
+  returnHome,
+  leaveHome,
+} = trackSlice.actions;
 export default trackSlice.reducer;
