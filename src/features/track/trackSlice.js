@@ -10,7 +10,7 @@ const initialState = {
 };
 
 export const getData = createAsyncThunk("track/getData", (shipmentNumnber) => {
-  const url = `https://tracking.bosta.co/shipments/track/${shipmentNumnber}?lang=en`;
+  const url = `https://tracking.bosta.co/shipments/track/${shipmentNumnber}`;
   return fetch(url)
     .then(async (resp) => {
       const data = await resp.json();

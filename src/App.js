@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Status from "./components/Status";
 import Track from "./components/Track";
 import Modal from "./components/Modal";
+import NotFound from "./components/NotFound";
 
 import { useSelector } from "react-redux";
 
@@ -22,6 +23,7 @@ function App() {
           <ActivityLog />
         </>
       )}
+      <NotFound />
     </>
   );
 }

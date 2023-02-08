@@ -1,0 +1,28 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-info {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: 30px auto;
+  font-size: 14.5px;
+  color: #111619;
+  background-color: #fef3f2;
+  border: 1px solid #fecdca;
+  border-radius: 5px;
+}
+
+.error-info svg {
+  color: red;
+  width: 3rem;
+  font-size: 1.5rem;
+  margin: 25px 10px 25px 10px;
+}
+
+.error-info p {
+  width: 93%;
+}
