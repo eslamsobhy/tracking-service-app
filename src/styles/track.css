@@ -46,29 +46,3 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* Modal */
-
-.modal-container {
-  position: absolute;
-  top: 80px;
-  width: 100%;
-  height: 120vh;
-  background-color: #fff;
-  z-index: 1;
-  padding: 23px 0;
-  color: #111619;
-  padding: 30px 30px;
-  transition: left 0.3s ease-in-out;
-}
-
-.modal-hide {
-  display: none;
-}
-
-.modal-option {
-  width: 95%;
-  border-bottom: 1px dashed #667085;
-  padding-bottom: 23px;
-  cursor: pointer;
-}
