@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background-color: #0098a5;
+  color: white;
+}
+
 body {
   margin: 0;
   font-family: "Cairo", "Lato", sans-serif, "Arial", -apple-system,

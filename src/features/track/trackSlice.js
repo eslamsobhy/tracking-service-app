@@ -15,7 +15,6 @@ export const getData = createAsyncThunk("track/getData", (shipmentNumnber) => {
   return fetch(url)
     .then(async (resp) => {
       const data = await resp.json();
-      console.log(data);
       return data;
     })
     .catch((err) => console.log(err));

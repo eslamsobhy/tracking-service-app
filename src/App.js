@@ -16,7 +16,6 @@ function App() {
   }
   return (
     <>
-      {console.log(shipment)}
       <Modal />
       {!isModalOpen && !isLoading && (
         <>
