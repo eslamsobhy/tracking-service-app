@@ -6,13 +6,11 @@ import "../styles/status.css";
 import "../styles/media.css";
 
 const Status = () => {
-  const { shipment } = useSelector((store) => store.track);
-
   return (
     <>
       <div className="status-container">
         <p className="shipment-no">Shipment No. 7234258</p>
-        <h1 className="shipment-heading">{shipment.status}</h1>
+        <h1 className="shipment-heading">Delivered</h1>
         <div className="progress-bar">
           <div className="bar bar-1"></div>
           <div className="bar bar-2"></div>

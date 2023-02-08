@@ -1,12 +1,24 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const initialState = {
   isDropDownOpen: false,
-  shipment: { error: "Invalid tracking number!", status: "Not Found" },
+  shipment: {},
   isLoading: true,
   isArabic: false,
+  isError: false,
   location: {},
 };
+
+export const getData = createAsyncThunk("track/getData", (shipmentNumnber) => {
+  const url = `https://tracking.bosta.co/shipments/track/${shipmentNumnber}?lang=en`;
+  return fetch(url)
+    .then(async (resp) => {
+      const data = await resp.json();
+      console.log(data);
+      return data;
+    })
+    .catch((err) => console.log(err));
+});
 
 const trackSlice = createSlice({
   name: "track",
@@ -22,6 +34,19 @@ const trackSlice = createSlice({
     // changeLang: (state) => {
     //   state.isArabic = true;
     // },
+  },
+  extraReducers: {
+    [getData.pending]: (state) => {
+      state.isLoading = true;
+    },
+    [getData.fulfilled]: (state, action) => {
+      state.isLoading = false;
+      state.shipment = action.payload;
+    },
+    [getData.rejected]: (state) => {
+      state.isLoading = false;
+      state.isError = true;
+    },
   },
 });
 
