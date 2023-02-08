@@ -42,3 +42,15 @@
     margin: 20px auto;
   }
 }
+
+/* Modal */
+
+@media (min-width: 851px) {
+  .modal-container {
+    display: none;
+  }
+
+  .modal-option {
+    display: none;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 import { openDropDown, closeDropDown } from "../features/track/trackSlice";
+import { openModal, closeModal } from "../features/modal/modalSlice";
 
 import { useDispatch, useSelector } from "react-redux";
 
@@ -17,9 +18,19 @@ const Navbar = () => {
 
   const dispatch = useDispatch();
   const { isDropDownOpen, location } = useSelector((store) => store.track);
+  const { isModalOpen } = useSelector((store) => store.modal);
 
   const closeDrop = () => {
     dispatch(closeDropDown());
+  };
+
+  const handleModal = () => {
+    if (isModalOpen) {
+      dispatch(closeModal());
+    }
+    if (!isModalOpen) {
+      dispatch(openModal());
+    }
   };
 
   const handleOpeningDropDown = (e) => {
@@ -94,7 +105,7 @@ const Navbar = () => {
             <RiArrowDownSLine className="arrow-icon" />
           </span>
         </div>
-        <div className="media-icon">
+        <div className="media-icon" onClick={handleModal}>
           <FaBars />
         </div>
         {isDropDownOpen && (
