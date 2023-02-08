@@ -5,14 +5,16 @@ const initialState = {
   shipment: { error: "Invalid tracking number!", status: "Not Found" },
   isLoading: true,
   isArabic: false,
+  location: {},
 };
 
 const trackSlice = createSlice({
   name: "track",
   initialState,
   reducers: {
-    openDropDown: (state) => {
+    openDropDown: (state, coordinates) => {
       state.isDropDownOpen = true;
+      state.location = coordinates;
     },
     closeDropDown: (state) => {
       state.isDropDownOpen = false;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import { openDropDown, closeDropDown } from "../features/track/trackSlice";
 
@@ -13,17 +13,32 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
-  const dispatch = useDispatch();
-  const { isDropDownOpen } = useSelector((store) => store.track);
+  const dropDown = useRef(null);
 
-  const handleOpeningDropDown = () => {
+  const dispatch = useDispatch();
+  const { isDropDownOpen, location } = useSelector((store) => store.track);
+
+  const handleOpeningDropDown = (e) => {
+    const clickedLocation = e.target.getBoundingClientRect();
+    const center = (clickedLocation.right + clickedLocation.left) / 2;
+    const bottom = clickedLocation.bottom;
     if (isDropDownOpen) {
       dispatch(closeDropDown());
     }
     if (!isDropDownOpen) {
-      dispatch(openDropDown());
+      dispatch(openDropDown({ center, bottom }));
     }
   };
+
+  useEffect(() => {
+    if (dropDown.current) {
+      const { center, bottom } = location.payload;
+      const dropDownMenu = dropDown.current;
+      dropDownMenu.style.left = `${center - 10}px`;
+      dropDownMenu.style.top = `${bottom}px`;
+    }
+  }, [location]);
+
   return (
     <div className="container">
       <nav>
@@ -75,6 +90,7 @@ const Navbar = () => {
         </div>
         {isDropDownOpen && (
           <div
+            ref={dropDown}
             className={
               isDropDownOpen
                 ? "drop-down-container"
