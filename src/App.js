@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 
 function App() {
   const { isModalOpen } = useSelector((store) => store.modal);
-  const { shipment } = useSelector((store) => store.track);
+  const { shipment, isLoading } = useSelector((store) => store.track);
 
   if (shipment.status === "Not Found.") {
     return <NotFound />;
@@ -17,14 +17,13 @@ function App() {
   return (
     <>
       {console.log(shipment)}
-      {/*
       <Modal />
-      {!isModalOpen && (
+      {!isModalOpen && !isLoading && (
         <>
           <Status />
           <ActivityLog />
         </>
-      )} */}
+      )}
     </>
   );
 }

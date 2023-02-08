@@ -24,8 +24,8 @@
 
 .bar {
   height: 0.35rem;
-  background-color: #0098a5;
   width: 33.3%;
+  background-color: #d9f4f8;
   margin-right: 5px;
 }
 
@@ -35,6 +35,10 @@
 
 .bar-3 {
   border-radius: 0 5px 5px 0;
+}
+
+.checked-bar {
+  background-color: #0098a5;
 }
 
 .last-info {

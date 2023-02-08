@@ -1,26 +1,37 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 // styles
 import "../styles/activity-log.css";
 import "../styles/media.css";
 
 const ActivityLog = () => {
-  return (
-    <>
-      <div className="activity-container">
-        <div className="activity-title">ACTIVITY LOG</div>
-        <div className="activity-info">
-          <div className="log-date">Sat, 22 May</div>
-          <div className="log-details">
-            <p className="log-info">
-              Your shipper requested a pickup. Bosta will pick it up soon
-            </p>
-            <p className="log-time">5:30 PM</p>
+  const { shipment } = useSelector((store) => store.track);
+
+  if (shipment.CurrentStatus) {
+    const date =
+      shipment.TransitEvents[shipment.TransitEvents.length - 1].timestamp;
+
+    const message =
+      shipment.CurrentStatus.state === "DELIVERED"
+        ? "Order is delivered"
+        : "Order is returned";
+
+    return (
+      <>
+        <div className="activity-container">
+          <div className="activity-title">ACTIVITY LOG</div>
+          <div className="activity-info">
+            <div className="log-date">{date.slice(0, 10)}</div>
+            <div className="log-details">
+              <p className="log-info">{message}</p>
+              <p className="log-time">{date.slice(11, 16)}</p>
+            </div>
           </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+    );
+  }
 };
 
 export default ActivityLog;

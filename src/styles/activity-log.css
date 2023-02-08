@@ -27,7 +27,7 @@
 .activity-info::after {
   content: "";
   width: 2px;
-  height: 75px;
+  height: 120px;
   background-color: #ddd;
   position: absolute;
   left: -17.5px;

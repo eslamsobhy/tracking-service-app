@@ -6,25 +6,46 @@ import "../styles/status.css";
 import "../styles/media.css";
 
 const Status = () => {
-  return (
-    <>
-      <div className="status-container">
-        <p className="shipment-no">Shipment No. 7234258</p>
-        <h1 className="shipment-heading">Delivered</h1>
-        <div className="progress-bar">
-          <div className="bar bar-1"></div>
-          <div className="bar bar-2"></div>
-          <div className="bar bar-3"></div>
+  const { shipment } = useSelector((store) => store.track);
+
+  if (shipment.CurrentStatus) {
+    const status =
+      shipment.CurrentStatus.state === "DELIVERED" ? "Delivered" : "Returned";
+    const message =
+      shipment.CurrentStatus.state === "DELIVERED"
+        ? "Order is delivered"
+        : "Order is returned";
+
+    const date =
+      shipment.TransitEvents[shipment.TransitEvents.length - 1].timestamp;
+    const lastUpdate = (2023 - date.slice(0, 4).toString()) * 365;
+
+    return (
+      <>
+        <div className="status-container">
+          <p className="shipment-no">Shipment No. {shipment.TrackingNumber}</p>
+          <h1 className="shipment-heading">{status}</h1>
+          <div className="progress-bar">
+            <div className="bar bar-1 checked-bar"></div>
+            <div className="bar bar-2 checked-bar"></div>
+            <div
+              className={
+                shipment.CurrentStatus.state === "DELIVERED"
+                  ? "bar bar-3 checked-bar"
+                  : "bar bar-3"
+              }
+            ></div>
+          </div>
+          <p className="last-info">
+            {message}
+            <span className="last-info-date"> {date.slice(0, 10)}</span>
+          </p>
+          <p className="last-update">{`last update ${lastUpdate} days ago`}</p>
         </div>
-        <p className="last-info">
-          Your shipper requested a pickup. Bosta will pick it up soon
-          <span className="last-info-date"> july 22nd, 2021</span>
-        </p>
-        <p className="last-update">(last update 230 days ago)</p>
-      </div>
-      <hr />
-    </>
-  );
+        <hr />
+      </>
+    );
+  }
 };
 
 export default Status;
