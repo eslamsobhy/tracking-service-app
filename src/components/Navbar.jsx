@@ -1,5 +1,9 @@
 import React from "react";
 
+import { openDropDown, closeDropDown } from "../features/track/trackSlice";
+
+import { useDispatch, useSelector } from "react-redux";
+
 // styles
 import "../styles/navbar.css";
 import "../styles/media.css";
@@ -9,6 +13,17 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const { isDropDownOpen } = useSelector((store) => store.track);
+
+  const handleOpeningDropDown = () => {
+    if (isDropDownOpen) {
+      dispatch(closeDropDown());
+    }
+    if (!isDropDownOpen) {
+      dispatch(openDropDown());
+    }
+  };
   return (
     <div className="container">
       <nav>
@@ -49,7 +64,7 @@ const Navbar = () => {
             ></path>
           </svg>
         </span>
-        <div className="drop-down">
+        <div className="drop-down" onClick={handleOpeningDropDown}>
           <span className="drop-down-lang">En</span>
           <span className="drop-down-icon">
             <RiArrowDownSLine className="arrow-icon" />
@@ -58,12 +73,20 @@ const Navbar = () => {
         <div className="media-icon">
           <FaBars />
         </div>
-        <div className="drop-hide drop-down-contaainer">
-          <ul className="drop-items">
-            <li className="drop-item">English</li>
-            <li className="drop-item">Arabic</li>
-          </ul>
-        </div>
+        {isDropDownOpen && (
+          <div
+            className={
+              isDropDownOpen
+                ? "drop-down-container"
+                : "drop-down-container drop-hide"
+            }
+          >
+            <ul className="drop-items">
+              <li className="drop-item">English</li>
+              <li className="drop-item">Arabic</li>
+            </ul>
+          </div>
+        )}
       </nav>
     </div>
   );

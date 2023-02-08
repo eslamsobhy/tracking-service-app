@@ -10,8 +10,20 @@ const initialState = {
 const trackSlice = createSlice({
   name: "track",
   initialState,
+  reducers: {
+    openDropDown: (state) => {
+      state.isDropDownOpen = true;
+    },
+    closeDropDown: (state) => {
+      state.isDropDownOpen = false;
+    },
+    // changeLang: (state) => {
+    //   state.isArabic = true;
+    // },
+  },
 });
 
 console.log(trackSlice);
 
+export const { openDropDown, closeDropDown } = trackSlice.actions;
 export default trackSlice.reducer;

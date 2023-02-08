@@ -59,9 +59,6 @@
 }
 
 .drop-hide {
-  /* position: absolute;
-  top: -999px;
-  left: -9999px; */
   display: none;
 }
 
