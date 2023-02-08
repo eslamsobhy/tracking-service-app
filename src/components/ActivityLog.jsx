@@ -25,7 +25,7 @@ const ActivityLog = () => {
             <div className="log-date">{date.slice(0, 10)}</div>
             <div className="log-details">
               <p className="log-info">{message}</p>
-              <p className="log-time">{date.slice(11, 16)}</p>
+              <p className="log-time">{date.slice(11, 16)} PM</p>
             </div>
           </div>
         </div>
