@@ -18,6 +18,10 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const { isDropDownOpen, location } = useSelector((store) => store.track);
 
+  const closeDrop = () => {
+    dispatch(closeDropDown());
+  };
+
   const handleOpeningDropDown = (e) => {
     const clickedLocation = e.target.getBoundingClientRect();
     const center = (clickedLocation.right + clickedLocation.left) / 2;
@@ -38,6 +42,11 @@ const Navbar = () => {
       dropDownMenu.style.top = `${bottom}px`;
     }
   }, [location]);
+
+  useEffect(() => {
+    window.addEventListener("resize", closeDrop);
+    return () => window.removeEventListener("resize", closeDrop);
+  }, [window.innerWidth]);
 
   return (
     <div className="container">
