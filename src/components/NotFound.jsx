@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 // styling
 import "../styles/not-found.css";
@@ -7,10 +8,12 @@ import "../styles/not-found.css";
 import { ImWarning } from "react-icons/im";
 
 const NotFound = () => {
+  const { shipmentNum } = useSelector((store) => store.track);
+
   return (
     <>
       <div className="error-container">
-        <p className="shipment-no">Shipment No. 7234258</p>
+        <p className="shipment-num">Shipment No. {shipmentNum.payload}</p>
         <div className="error-info">
           <ImWarning />
           <p>

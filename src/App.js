@@ -1,9 +1,7 @@
 // Components
 
 import ActivityLog from "./components/ActivityLog";
-import Navbar from "./components/Navbar";
 import Status from "./components/Status";
-import Track from "./components/Track";
 import Modal from "./components/Modal";
 import NotFound from "./components/NotFound";
 
@@ -11,19 +9,22 @@ import { useSelector } from "react-redux";
 
 function App() {
   const { isModalOpen } = useSelector((store) => store.modal);
+  const { shipment } = useSelector((store) => store.track);
 
+  if (shipment.status === "Not Found.") {
+    return <NotFound />;
+  }
   return (
     <>
-      <Navbar />
+      {console.log(shipment)}
+      {/*
       <Modal />
       {!isModalOpen && (
         <>
-          <Track />
           <Status />
           <ActivityLog />
         </>
-      )}
-      <NotFound />
+      )} */}
     </>
   );
 }

@@ -7,10 +7,15 @@ import App from "./App";
 import { store } from "./store";
 import { Provider } from "react-redux";
 
+import Navbar from "./components/Navbar";
+import Track from "./components/Track";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+      <Navbar />
+      <Track />
       <App />
     </Provider>
   </React.StrictMode>

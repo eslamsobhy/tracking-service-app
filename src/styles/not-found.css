@@ -2,13 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 65px;
+}
+
+.shipment-num {
+  color: #667085;
+  font-family: "Lato";
 }
 
 .error-info {
   display: flex;
   justify-content: space-between;
   width: 55%;
-  margin: 30px auto;
+  margin: 15px auto;
   font-size: 14.5px;
   color: #111619;
   background-color: #fef3f2;

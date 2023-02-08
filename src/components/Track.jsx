@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { getData } from "../features/track/trackSlice";
+import { getData, updateShipmentNum } from "../features/track/trackSlice";
 
 // styles
 import "../styles/track.css";
@@ -15,6 +15,7 @@ const Track = () => {
 
   const handleSearch = () => {
     if (searchShipment) {
+      dispatch(updateShipmentNum(searchShipment));
       dispatch(getData(searchShipment));
     } else {
       console.log("empty field");
