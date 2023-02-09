@@ -9,14 +9,6 @@ const ActivityLog = () => {
   const { shipment } = useSelector((store) => store.track);
 
   if (shipment.CurrentStatus) {
-    const date =
-      shipment.TransitEvents[shipment.TransitEvents.length - 1].timestamp;
-
-    const message =
-      shipment.CurrentStatus.state === "DELIVERED"
-        ? "Order is delivered"
-        : "Order is returned";
-
     return (
       <>
         <div className="activity-container">

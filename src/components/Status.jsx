@@ -16,8 +16,7 @@ const Status = () => {
         ? "Order is delivered to the client"
         : "Order is returned to the shipper";
 
-    const date =
-      shipment.TransitEvents[shipment.TransitEvents.length - 1].timestamp;
+    const date = shipment.CurrentStatus.timestamp;
     const lastUpdate = (2023 - date.slice(0, 4).toString()) * 365;
 
     return (
