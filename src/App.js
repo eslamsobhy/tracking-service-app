@@ -29,7 +29,7 @@ function App() {
             fontWeight: "bold",
           }}
         >
-          {t("Welcome to React")}
+          {t("welcome_to_react")}
         </p>
         <Blank />
         <Modal />
