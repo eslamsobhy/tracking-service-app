@@ -7,7 +7,7 @@ const initialState = {
   isArabic: false,
   isError: false,
   shipmentNum: "",
-  isBlank: false,
+  isBlank: true,
   location: {},
 };
 
