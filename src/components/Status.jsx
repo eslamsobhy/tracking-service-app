@@ -13,8 +13,8 @@ const Status = () => {
       shipment.CurrentStatus.state === "DELIVERED" ? "Delivered" : "Returned";
     const message =
       shipment.CurrentStatus.state === "DELIVERED"
-        ? "Order is delivered"
-        : "Order is returned";
+        ? "Order is delivered to the client"
+        : "Order is returned to the shipper";
 
     const date =
       shipment.TransitEvents[shipment.TransitEvents.length - 1].timestamp;

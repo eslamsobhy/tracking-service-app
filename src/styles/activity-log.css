@@ -11,6 +11,7 @@
 .activity-info {
   position: relative;
   margin-left: 25px;
+  margin-bottom: 20px;
 }
 
 .activity-info::before {
@@ -21,17 +22,17 @@
   position: absolute;
   border-radius: 50%;
   left: -25px;
-  top: -5px;
+  top: 5px;
 }
 
 .activity-info::after {
   content: "";
   width: 2px;
-  height: 120px;
+  height: 80%;
   background-color: #ddd;
   position: absolute;
   left: -17.5px;
-  top: 17px;
+  top: 25px;
 }
 
 .log-date {
@@ -51,6 +52,7 @@
   margin: 0 0 10px 0;
   font-size: 14px;
   color: #111619;
+  text-transform: capitalize;
 }
 
 .log-details .log-time {

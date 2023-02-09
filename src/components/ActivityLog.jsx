@@ -21,13 +21,23 @@ const ActivityLog = () => {
       <>
         <div className="activity-container">
           <div className="activity-title">ACTIVITY LOG</div>
-          <div className="activity-info">
-            <div className="log-date">{date.slice(0, 10)}</div>
-            <div className="log-details">
-              <p className="log-info">{message}</p>
-              <p className="log-time">{date.slice(11, 16)} PM</p>
-            </div>
-          </div>
+          {shipment.TransitEvents.map((event) => {
+            return (
+              <div className="activity-info">
+                <div className="log-date">{event.timestamp.slice(0, 10)}</div>
+                <div className="log-details">
+                  <p className="log-info">
+                    {event.state.startsWith("TICKET") ||
+                    event.state.startsWith("PACKAGE")
+                      ? event.state.replaceAll("_", " ").toLowerCase()
+                      : "The order is " +
+                        event.state.replaceAll("_", " ").toLowerCase()}
+                  </p>
+                  <p className="log-time">{event.timestamp.slice(11, 16)} PM</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </>
     );
