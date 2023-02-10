@@ -46,3 +46,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* rtl styling */
+
+.track-rtl {
+  direction: rtl;
+}
+
+.search-rtl {
+  border-radius: 0 10px 10px 0 !important;
+}
+
+.icon-rtl {
+  border-radius: 10px 0 0 10px !important;
+}
+
+.heading-rtl {
+  letter-spacing: 0 !important;
+}
