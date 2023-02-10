@@ -10,6 +10,8 @@
   "ui_am": "AM",
   "ui_pm": "PM",
   "ui_lang": "En",
+  "ui_lang_en": "English",
+  "ui_lang_ar": "Arabic",
   "api_delivered": "Delivered",
   "api_returned": "Returned",
   "api_delivered_message": "Order is delivered to the client",

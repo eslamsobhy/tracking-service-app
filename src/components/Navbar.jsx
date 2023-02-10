@@ -125,13 +125,13 @@ const Navbar = () => {
                 className="drop-item"
                 onClick={() => i18next.changeLanguage("en")}
               >
-                English
+                {t("ui_lang_en")}
               </li>
               <li
                 className="drop-item"
                 onClick={() => i18next.changeLanguage("ar")}
               >
-                Arabic
+                {t("ui_lang_ar")}
               </li>
             </ul>
           </div>

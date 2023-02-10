@@ -10,6 +10,8 @@
   "ui_am": "ص",
   "ui_pm": "م",
   "ui_lang": "عربي",
+  "ui_lang_en": "الإنجليزية",
+  "ui_lang_ar": "العربية",
   "api_delivered": "تم تسليم الأوردر",
   "api_returned": "تم إرجاعه",
   "api_delivered_message": "تم تسليم الأوردر إلى العميل",
