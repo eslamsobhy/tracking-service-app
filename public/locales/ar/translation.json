@@ -9,5 +9,19 @@
   "ui_days_ago": " يوم مضت",
   "ui_am": "ص",
   "ui_pm": "م",
-  "ui_lang": "عربي"
+  "ui_lang": "عربي",
+  "api_delivered": "تم تسليم الأوردر",
+  "api_returned": "تم إرجاعه",
+  "api_delivered_message": "تم تسليم الأوردر إلى العميل",
+  "api_returned_message": "تم إرجاع الأوردر إلى الرّاسل",
+  "api_not_yet_shipped": "لم يتم شحن الأوردر بعد",
+  "api_available_for_pickup": "الأوردر متاح للاستلام",
+  "api_waiting_for_customer_action": "الأوردر في انتظار إجراء العميل",
+  "api_canceled": "تم إلغاء الأوردر",
+  "api_ticket_created": "تم إنشاء التذكرة",
+  "api_package_received": "تم استلام الشحنة",
+  "api_in_transit": "الأوردر قيد النقل",
+  "api_out_for_delivery": "الأوردر خارج للتسليم",
+  "api_delivered_log": "تم توصيل الأوردر",
+  "api_delivered_to_sender": "تم تسليم الأوردر إلى الرّاسل"
 }

@@ -13,11 +13,13 @@ const Status = () => {
 
   if (shipment.CurrentStatus) {
     const status =
-      shipment.CurrentStatus.state === "DELIVERED" ? "Delivered" : "Returned";
+      shipment.CurrentStatus.state === "DELIVERED"
+        ? t("api_delivered")
+        : t("api_returned");
     const message =
       shipment.CurrentStatus.state === "DELIVERED"
-        ? "Order is delivered to the client"
-        : "Order is returned to the shipper";
+        ? t("api_delivered_message")
+        : t("api_returned_message");
 
     const date = shipment.CurrentStatus.timestamp;
     const lastUpdate = (2023 - date.slice(0, 4).toString()) * 365;

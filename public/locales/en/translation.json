@@ -9,5 +9,19 @@
   "ui_days_ago": "days ago.",
   "ui_am": "AM",
   "ui_pm": "PM",
-  "ui_lang": "En"
+  "ui_lang": "En",
+  "api_delivered": "Delivered",
+  "api_returned": "Returned",
+  "api_delivered_message": "Order is delivered to the client",
+  "api_returned_message": "Order is returned to the shipper",
+  "api_not_yet_shipped": "The order is not yet shipped",
+  "api_available_for_pickup": "The order is available for pickup",
+  "api_waiting_for_customer_action": "The order is waiting for customer action",
+  "api_canceled": "The order is canceled",
+  "api_ticket_created": "The ticket is created",
+  "api_package_received": "The package is received",
+  "api_in_transit": "The order is in transit",
+  "api_out_for_delivery": "The order is out for delivery",
+  "api_delivered_log": "The order is delivered",
+  "api_delivered_to_sender": "The order is delivered to sender"
 }
