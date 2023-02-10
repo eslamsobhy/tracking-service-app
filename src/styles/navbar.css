@@ -51,6 +51,7 @@
 
 .drop-down .drop-down-icon {
   text-align: center;
+  padding-top: 5px;
 }
 
 .drop-down .drop-down-icon svg {

@@ -28,7 +28,7 @@ const Status = () => {
       <>
         <div className="status-container">
           <p className="shipment-no">
-            {t("ui_shipment_no")} {shipment.TrackingNumber}
+            {t("ui_shipment_no") + " "} {shipment.TrackingNumber}
           </p>
           <h1 className="shipment-heading">{status}</h1>
           <div className="progress-bar">

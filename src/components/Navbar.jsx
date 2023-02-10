@@ -2,7 +2,12 @@ import React, { useRef, useEffect } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
-import { openDropDown, closeDropDown } from "../features/track/trackSlice";
+import {
+  openDropDown,
+  closeDropDown,
+  changeLangToAr,
+  changeLangToEn,
+} from "../features/track/trackSlice";
 import { openModal, closeModal } from "../features/modal/modalSlice";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -22,6 +27,16 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const { isDropDownOpen, location } = useSelector((store) => store.track);
   const { isModalOpen } = useSelector((store) => store.modal);
+
+  const changeLanguageToAr = () => {
+    dispatch(changeLangToAr());
+    i18next.changeLanguage("ar");
+  };
+
+  const changeLanguageToEn = () => {
+    dispatch(changeLangToEn());
+    i18next.changeLanguage("en");
+  };
 
   const closeDrop = () => {
     dispatch(closeDropDown());
@@ -121,16 +136,10 @@ const Navbar = () => {
             }
           >
             <ul className="drop-items">
-              <li
-                className="drop-item"
-                onClick={() => i18next.changeLanguage("en")}
-              >
+              <li className="drop-item" onClick={changeLanguageToEn}>
                 {t("ui_lang_en")}
               </li>
-              <li
-                className="drop-item"
-                onClick={() => i18next.changeLanguage("ar")}
-              >
+              <li className="drop-item" onClick={changeLanguageToAr}>
                 {t("ui_lang_ar")}
               </li>
             </ul>

@@ -41,9 +41,12 @@ const trackSlice = createSlice({
     leaveHome: (state) => {
       state.isBlank = false;
     },
-    // changeLang: (state) => {
-    //   state.isArabic = true;
-    // },
+    changeLangToAr: (state) => {
+      state.isArabic = true;
+    },
+    changeLangToEn: (state) => {
+      state.isArabic = false;
+    },
   },
   extraReducers: {
     [getData.pending]: (state) => {
@@ -66,5 +69,7 @@ export const {
   updateShipmentNum,
   returnHome,
   leaveHome,
+  changeLangToAr,
+  changeLangToEn,
 } = trackSlice.actions;
 export default trackSlice.reducer;
