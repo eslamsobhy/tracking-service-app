@@ -94,3 +94,14 @@
 .drop-item:hover {
   background-color: #eee;
 }
+
+/* rtl styling */
+
+.nav-rtl {
+  direction: rtl;
+}
+
+.drop-down:hover .arrow-icon-rtl {
+  color: #e30613;
+  transform: rotate(90deg);
+}
