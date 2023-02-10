@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from "react";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 import { openDropDown, closeDropDown } from "../features/track/trackSlice";
 import { openModal, closeModal } from "../features/modal/modalSlice";
@@ -14,6 +16,7 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const dropDown = useRef(null);
 
   const dispatch = useDispatch();
@@ -100,7 +103,7 @@ const Navbar = () => {
           </svg>
         </span>
         <div className="drop-down" onClick={handleOpeningDropDown}>
-          <span className="drop-down-lang">En</span>
+          <span className="drop-down-lang">{t("ui_lang")}</span>
           <span className="drop-down-icon">
             <RiArrowDownSLine className="arrow-icon" />
           </span>
@@ -118,8 +121,18 @@ const Navbar = () => {
             }
           >
             <ul className="drop-items">
-              <li className="drop-item">English</li>
-              <li className="drop-item">Arabic</li>
+              <li
+                className="drop-item"
+                onClick={() => i18next.changeLanguage("en")}
+              >
+                English
+              </li>
+              <li
+                className="drop-item"
+                onClick={() => i18next.changeLanguage("ar")}
+              >
+                Arabic
+              </li>
             </ul>
           </div>
         )}

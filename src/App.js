@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 // Components
 
 import ActivityLog from "./components/ActivityLog";
@@ -16,6 +17,10 @@ function App() {
   );
 
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = t("ui_app_title");
+  }, [t]);
 
   if (isBlank) {
     return (

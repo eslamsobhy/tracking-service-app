@@ -1,3 +1,13 @@
 {
-  "welcome_to_react": "react-i18next مرحبًا بك في ريأكت و خاصية الترجمة المقدمة من "
+  "ui_app_title": "بوسطة | أسرع خدمة بريد سريع في مصر",
+  "welcome_to_react": "react-i18next مرحبًا بك في ريأكت و خاصية الترجمة المقدمة من ",
+  "ui_track_your_shipment": " تتبّع شحنتك",
+  "ui_tracking_no": " رقم التتبّع",
+  "ui_shipment_no": " رقم الشحنة",
+  "ui_activity_log": " تفاصيل التتبّع",
+  "ui_last_update": " آخر تحديث",
+  "ui_days_ago": " يوم مضت",
+  "ui_am": "ص",
+  "ui_pm": "م",
+  "ui_lang": "عربي"
 }

@@ -1,1 +1,13 @@
-{ "welcome_to_react": "Welcome to React and react-i18next" }
+{
+  "ui_app_title": "Bosta | Fastest Courier Service in Egypt",
+  "welcome_to_react": "Welcome to react and i18next ",
+  "ui_track_your_shipment": "Track your shipment",
+  "ui_tracking_no": "Tracking No. ",
+  "ui_shipment_no": "Shipment No. ",
+  "ui_activity_log": "ACTIVITY LOG",
+  "ui_last_update": "Last update ",
+  "ui_days_ago": "days ago.",
+  "ui_am": "AM",
+  "ui_pm": "PM",
+  "ui_lang": "En"
+}
