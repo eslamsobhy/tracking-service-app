@@ -34,3 +34,14 @@
   width: 93%;
   padding-right: 10px;
 }
+
+/* rtl styling */
+
+.error-rtl {
+  direction: rtl;
+}
+
+.p-rtl {
+  padding-left: 10px;
+  padding-right: 0 !important;
+}
