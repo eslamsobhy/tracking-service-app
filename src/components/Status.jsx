@@ -9,7 +9,7 @@ import "../styles/media.css";
 const Status = () => {
   const { t } = useTranslation();
 
-  const { shipment } = useSelector((store) => store.track);
+  const { shipment, isArabic } = useSelector((store) => store.track);
 
   if (shipment.CurrentStatus) {
     const status =
@@ -26,18 +26,34 @@ const Status = () => {
 
     return (
       <>
-        <div className="status-container">
+        <div
+          className={
+            isArabic ? "status-container status-rtl" : "status-container"
+          }
+        >
           <p className="shipment-no">
             {t("ui_shipment_no") + " "} {shipment.TrackingNumber}
           </p>
           <h1 className="shipment-heading">{status}</h1>
-          <div className="progress-bar">
-            <div className="bar bar-1 checked-bar"></div>
+          <div
+            className={isArabic ? "progress-bar progress-rtl" : "progress-bar"}
+          >
+            <div
+              className={
+                isArabic
+                  ? "bar bar-1 checked-bar bar-rtl-1"
+                  : "bar bar-1 checked-bar"
+              }
+            ></div>
             <div className="bar bar-2 checked-bar"></div>
             <div
               className={
                 shipment.CurrentStatus.state === "DELIVERED"
-                  ? "bar bar-3 checked-bar"
+                  ? isArabic
+                    ? "bar bar-3 checked-bar bar-rtl-3"
+                    : "bar bar-3 checked-bar"
+                  : isArabic
+                  ? "bar bar-3 bar-rtl-3"
                   : "bar bar-3"
               }
             ></div>

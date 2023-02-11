@@ -63,3 +63,21 @@ hr {
   color: #eeeeee71;
   margin-top: 30px;
 }
+
+/* rtl styling */
+
+.status.rtl {
+  direction: rtl;
+}
+
+.progress-rtl {
+  direction: rtl;
+}
+
+.bar-rtl-1 {
+  border-radius: 0 5px 5px 0 !important;
+}
+
+.bar-rtl-3 {
+  border-radius: 5px 0 0 5px !important;
+}
