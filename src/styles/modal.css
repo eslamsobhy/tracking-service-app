@@ -8,6 +8,7 @@
   padding: 23px 0;
   color: #111619;
   padding: 30px 30px;
+  direction: rtl;
 }
 
 .modal-hide {
@@ -20,4 +21,10 @@
   border-bottom: 1px dashed #667085;
   padding-bottom: 23px;
   cursor: pointer;
+}
+
+/* rtl styling */
+
+.modal-rtl {
+  direction: ltr;
 }

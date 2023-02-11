@@ -38,7 +38,12 @@ const Modal = () => {
     <>
       <div
         className={
-          isModalOpen ? "modal-container" : "modal-container modal-hide"
+          // isModalOpen ? "modal-container" : "modal-container modal-hide"
+          isModalOpen
+            ? isArabic
+              ? "modal-container modal-rtl"
+              : "modal-container"
+            : "modal-container modal-hide"
         }
       >
         <div className="modal-option" onClick={handleClick}>
