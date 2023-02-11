@@ -9,7 +9,7 @@ import "../styles/media.css";
 const ActivityLog = () => {
   const { t } = useTranslation();
 
-  const { shipment } = useSelector((store) => store.track);
+  const { shipment, isArabic } = useSelector((store) => store.track);
 
   const checkLog = (log) => {
     switch (log) {
@@ -41,11 +41,21 @@ const ActivityLog = () => {
   if (shipment.CurrentStatus) {
     return (
       <>
-        <div className="activity-container">
+        <div
+          className={
+            isArabic ? "activity-container activity-rtl" : "activity-container"
+          }
+        >
           <div className="activity-title">{t("ui_activity_log")}</div>
           {shipment.TransitEvents.map((event) => {
             return (
-              <div className="activity-info">
+              <div
+                className={
+                  isArabic
+                    ? "activity-info info-rtl"
+                    : "activity-info activity-info-s"
+                }
+              >
                 <div className="log-date">{event.timestamp.slice(0, 10)}</div>
                 <div className="log-details">
                   <p className="log-info">{checkLog(event.state)}</p>
