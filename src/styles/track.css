@@ -27,6 +27,8 @@
 
 .tracking-search:focus {
   outline: none;
+  font-family: "Cairo";
+  font-weight: 600;
   box-shadow: 0px 0px 10px 1px rgba(65, 185, 221, 0.836);
 }
 

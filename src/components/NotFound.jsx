@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 
 // styling
@@ -8,19 +9,19 @@ import "../styles/not-found.css";
 import { ImWarning } from "react-icons/im";
 
 const NotFound = () => {
+  const { t } = useTranslation();
+
   const { shipmentNum } = useSelector((store) => store.track);
 
   return (
     <>
       <div className="error-container">
-        <p className="shipment-num">Shipment No. {shipmentNum.payload}</p>
+        <p className="shipment-num">
+          {t("ui_shipment_no")} {shipmentNum.payload}
+        </p>
         <div className="error-info">
           <ImWarning />
-          <p>
-            No record of this tracking number can be found at this time, please
-            check the number and try again later. For further assistance, please
-            contact Customer Service.
-          </p>
+          <p>{t("ui_not_found_msg")}</p>
         </div>
       </div>
     </>

@@ -12,6 +12,7 @@
   "ui_lang": "En",
   "ui_lang_en": "English",
   "ui_lang_ar": "Arabic",
+  "ui_not_found_msg": "No record of this tracking number can be found at this time, please check the number and try again later. For further assistance, please contact Customer Service.",
   "api_delivered": "Delivered",
   "api_returned": "Returned",
   "api_delivered_message": "Order is delivered to the client",
