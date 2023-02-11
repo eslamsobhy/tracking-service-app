@@ -32,13 +32,11 @@ const Navbar = () => {
 
   const changeLanguageToAr = () => {
     dispatch(changeLangToAr());
-    i18next.changeLanguage("ar");
     dispatch(closeDropDown());
   };
 
   const changeLanguageToEn = () => {
     dispatch(changeLangToEn());
-    i18next.changeLanguage("en");
     dispatch(closeDropDown());
   };
 

@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import i18next from "i18next";
 
 const initialState = {
   isDropDownOpen: false,
@@ -43,9 +44,11 @@ const trackSlice = createSlice({
     },
     changeLangToAr: (state) => {
       state.isArabic = true;
+      i18next.changeLanguage("ar");
     },
     changeLangToEn: (state) => {
       state.isArabic = false;
+      i18next.changeLanguage("en");
     },
   },
   extraReducers: {
