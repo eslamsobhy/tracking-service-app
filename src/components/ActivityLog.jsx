@@ -47,9 +47,10 @@ const ActivityLog = () => {
           }
         >
           <div className="activity-title">{t("ui_activity_log")}</div>
-          {shipment.TransitEvents.map((event) => {
+          {shipment.TransitEvents.map((event, index) => {
             return (
               <div
+                key={index}
                 className={
                   isArabic
                     ? "activity-info info-rtl"

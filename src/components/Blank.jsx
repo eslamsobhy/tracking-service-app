@@ -13,7 +13,7 @@ const Blank = () => {
           viewBox="0 0 627 588"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="br-shipment-tracking-image"
+          className="br-shipment-tracking-image"
         >
           <path
             opacity="0.1"
@@ -28,7 +28,7 @@ const Blank = () => {
             d="M107.945 226.738C107.945 222.043 111.751 218.238 116.445 218.238H243.772C248.466 218.238 252.272 222.043 252.272 226.738V321.01H107.945V226.738Z"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
+            strokeWidth="3"
           ></path>
           <rect
             x="140.054"
@@ -37,7 +37,7 @@ const Blank = () => {
             height="46.1088"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
+            strokeWidth="3"
           ></rect>
           <path
             d="M204.661 222.404H243.103C245.864 222.404 248.103 224.643 248.103 227.404V316.844H204.661V222.404Z"
@@ -47,7 +47,7 @@ const Blank = () => {
             d="M-66.8457 280C-66.8457 275.306 -63.0401 271.5 -58.3457 271.5H137.326C142.021 271.5 145.826 275.306 145.826 280V423.342H-66.8457V280Z"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
+            strokeWidth="3"
           ></path>
           <rect
             x="-19.8412"
@@ -56,7 +56,7 @@ const Blank = () => {
             height="68.8907"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
+            strokeWidth="3"
           ></rect>
           <path
             d="M75.4327 278.294H134.028C136.79 278.294 139.028 280.533 139.028 283.294V416.546H75.4327V278.294Z"
@@ -66,7 +66,7 @@ const Blank = () => {
             d="M107.945 329.069C107.945 324.375 111.751 320.569 116.445 320.569H243.772C248.466 320.569 252.272 324.375 252.272 329.069V423.342H107.945V329.069Z"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
+            strokeWidth="3"
           ></path>
           <rect
             x="140.054"
@@ -75,7 +75,7 @@ const Blank = () => {
             height="46.1088"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
+            strokeWidth="3"
           ></rect>
           <path
             d="M204.661 324.735H243.103C245.864 324.735 248.103 326.974 248.103 329.735V419.175H204.661V324.735Z"
@@ -85,8 +85,8 @@ const Blank = () => {
             d="M232.122 313.924C232.122 303.707 240.405 295.424 250.622 295.424H408.386C418.603 295.424 426.886 303.707 426.886 313.924V423.5H232.122V313.924Z"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M403.091 299.673H407.637C415.922 299.673 422.637 306.389 422.637 314.673V420.401H403.091V299.673Z"
@@ -96,54 +96,54 @@ const Blank = () => {
             d="M266.616 344.916C266.616 342.983 268.183 341.416 270.116 341.416H388.893C390.826 341.416 392.393 342.983 392.393 344.916V423.5H266.616V344.916Z"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M266.616 416.203C266.616 414.27 268.183 412.703 270.116 412.703H388.893C390.826 412.703 392.393 414.27 392.393 416.203V423.5H266.616V416.203Z"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M319.507 379.009C319.507 384.53 323.983 389.007 329.505 389.007C335.026 389.007 339.502 384.53 339.502 379.009C339.502 373.487 335.026 369.011 329.505 369.011C323.983 369.011 319.507 373.487 319.507 379.009Z"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M406.54 374.409L393.892 374.409"
             stroke="#667085"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M272.365 226.087C272.365 257.644 297.947 283.226 329.504 283.226C361.061 283.226 386.644 257.644 386.644 226.087C386.644 194.529 361.061 168.947 329.504 168.947C297.947 168.947 272.365 194.529 272.365 226.087Z"
             fill="white"
             stroke="#667085"
-            stroke-width="3"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M483 424H423"
             stroke="#667085"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
           <mask id="path-20-inside-1_1186_53731" fill="white">
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M483.283 226.086C437.245 225.931 399.797 263.015 399.64 308.917V309.199C400.402 331.306 408.058 352.626 421.542 370.192C436.671 390.335 455.237 407.667 476.391 421.395C480.185 424.668 485.813 424.668 489.608 421.395C503.798 412.262 516.881 401.523 528.597 389.393C549.083 367.839 565.792 340.26 566.359 310.423V309.481C566.515 263.58 529.321 226.243 483.283 226.086ZM483 333C496.255 333 507 322.255 507 309C507 295.745 496.255 285 483 285C469.745 285 459 295.745 459 309C459 322.255 469.745 333 483 333Z"
             ></path>
           </mask>
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M483.283 226.086C437.245 225.931 399.797 263.015 399.64 308.917V309.199C400.402 331.306 408.058 352.626 421.542 370.192C436.671 390.335 455.237 407.667 476.391 421.395C480.185 424.668 485.813 424.668 489.608 421.395C503.798 412.262 516.881 401.523 528.597 389.393C549.083 367.839 565.792 340.26 566.359 310.423V309.481C566.515 263.58 529.321 226.243 483.283 226.086ZM483 333C496.255 333 507 322.255 507 309C507 295.745 496.255 285 483 285C469.745 285 459 295.745 459 309C459 322.255 469.745 333 483 333Z"
             fill="white"
           ></path>
@@ -155,34 +155,34 @@ const Blank = () => {
           <path
             d="M584.757 309.446C584.757 253.247 539.199 207.689 483.001 207.689"
             stroke="#0098A5"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M604.303 309.446C604.303 242.452 549.994 188.143 483.001 188.143"
             stroke="#0098A5"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M625 309.446C625 231.022 561.425 167.447 483.001 167.447"
             stroke="#0098A5"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M265.116 374.409L252.469 374.409"
             stroke="#667085"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M362.848 265.652C374.098 256.16 381.244 241.958 381.244 226.087C381.244 210.215 374.098 196.013 362.848 186.521V265.652Z"
             fill="#E4E7EC"
           ></path>
@@ -193,7 +193,7 @@ const Blank = () => {
             height="23.7488"
             rx="9.7154"
             stroke="#E30613"
-            stroke-width="3"
+            strokeWidth="3"
           ></rect>
           <rect
             x="412.289"
@@ -203,21 +203,21 @@ const Blank = () => {
             rx="4"
             fill="white"
             stroke="#E30613"
-            stroke-width="3"
+            strokeWidth="3"
           ></rect>
           <path
             d="M428.121 134.136V142.052"
             stroke="#80CBD2"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
           <path
             d="M428.386 156.524L428.386 232.985"
             stroke="#1DBDCD"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-dasharray="1 6"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeDasharray="1 6"
           ></path>
         </svg>
       </div>
